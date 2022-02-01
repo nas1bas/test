@@ -1,0 +1,237 @@
+.hero {
+    position: relative;
+    z-index: 5;
+    padding: 95px 0;
+
+    &__container {
+        display: flex;
+    }
+
+    &__hidden {
+        display: none;
+    }
+
+    &__images {
+        position: absolute;
+        z-index: 1;
+        transform: translateX(80%) translateY(10%);
+    }
+
+    &__image {
+        margin-top: 7px;
+    }
+
+    &__content {
+        margin-left: 66px;
+    }
+
+    &__articul {
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: #828282;
+    }
+    &__prices {
+        display: flex;
+        align-items: center;
+        margin-top: 46px;
+    }
+    &__price {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #333333;
+    }
+
+    &__notprice {
+        margin-left: 12px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        text-decoration-line: line-through;
+        color: #828282;
+    }
+
+    &__input {
+        text-align: center;
+        margin-top: 17px;
+        width: 91px;
+        height: 24px;
+        font-size: 12px;
+        line-height: 16px;
+        margin-right: 7px;
+    }
+
+    &__select {
+        display: block;
+        margin-top: 16px;
+        padding: 10px 150px 10px 0;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        color: #333333;
+    }
+
+    &__size {
+        margin-top: 15px;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        color: #333333;
+    }
+
+    &__btns {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 12px;
+        margin-right: 5px;
+        border: none;
+        text-decoration: none;
+    }
+
+    &__btn-remove {
+        background-color: #f2f2f2;
+        border: none;
+        padding: 12px;
+    }
+    &__numbs {
+        background-color: #f2f2f2;
+        border: none;
+        padding: 10px;
+    }
+    &__btn-add {
+        background-color: #f2f2f2;
+        border: none;
+        padding: 12px;
+        margin-right: 12px;
+    }
+
+    &__korzina {
+        margin-right: 5px;
+        padding: 12px 28px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        background: #333333;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__fav {
+        display: inline;
+        background: #333333;
+        padding: 14px;
+    }
+
+    &__buy {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        color: #333333;
+    }
+
+    &__line {
+        margin-top: 30px;
+        border: 0.5px solid #c4c4c4;
+        width: 515px;
+    }
+
+    &__customer {
+        display: flex;
+        flex-direction: column;
+    }
+    &__custome {
+        margin-left: 6px;
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        color: #333333;
+    }
+
+    &__folder {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.stars {
+    margin-right: 10px;
+    &__otziv {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333333;
+    }
+}
+
+@include breakpoint-down(768px) {
+    .hero {
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__hidden {
+            display: block;
+        }
+
+        &__images {
+         margin-top: -24px;;
+        }
+
+        &__content {
+         text-align: left;
+        }
+
+        &__select {
+            padding: 10px 99px 10px 0;
+        }
+
+        &__korzina {
+            padding: 12px;
+        }
+
+        &__fav {
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__line {
+            margin-top: 30px;
+            border: 0.5px solid #c4c4c4;
+            width: 300px;
+        }
+
+        &__customer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__btns {
+            display: flex;
+            flex-wrap: wrap;
+            width: 350px;
+        }
+
+        &__image {
+            display: none;
+        }
+    }
+    .stars {
+        margin-right: 1px;
+    }
+}
