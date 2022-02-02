@@ -55,9 +55,13 @@
     }
 }
 
-@include breakpoint-down(400px) {
+@include breakpoint-down(768px) {
     .footer {
         padding: 55px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__lists {
             margin-left: 10px;
@@ -65,12 +69,9 @@
             display: flex;
             justify-content: space-between;
         }
-        &__container {
-            display: flex;
-            flex-direction: column;
-        }
 
         &__form {
+            display: none;
             margin-top: 60px;
         }
         &__input {
