@@ -55,7 +55,7 @@
     }
 }
 
-@include breakpoint-down(768px) {
+@include breakpoint-down(400px) {
     .footer {
         padding: 55px;
 

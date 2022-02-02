@@ -198,7 +198,7 @@
     }
 }
 
-@include breakpoint-down(375px) {
+@include breakpoint-down(400px) {
     .hero {
         &__container {
             display: flex;

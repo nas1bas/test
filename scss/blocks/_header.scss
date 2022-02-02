@@ -58,7 +58,7 @@
     }
 }
 
-@include breakpoint-down(375px) {
+@include breakpoint-down(400px) {
     .header {
         &__btn {
             display: block;
