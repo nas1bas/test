@@ -1,41 +1,63 @@
+//==========================================================================//
 const openBtn = findElement('.header__btn');
 const menu = findElement('.navbar');
 const closeBtn = findElement('.navbar__btn');
-const korzina = findElement('.hero__korzina');
-const favorite = findElement('.hero__fav');
-const heroImages = findElement('hero-images');
-const first = findElement('first-img');
-const second = findElement('second-img');
-const third = findElement('third-img');
-const fourth = findElement('fourth-img');
-const fifth = findElement('fifth-img');
-const sixth = findElement('sixth-img');
-const addBtn = findElement(".hero__btn-add");
-
 
 //open-menu
 openBtn.addEventListener('click', () => { menu.classList.add('menu-open') })
 //close-menu
 closeBtn.addEventListener('click', () => { menu.classList.remove('menu-open') })
 
+//================================================================================//
+
+
+
+//================================================================================//
+const korzina = findElement('.hero__korzina');
+const favorite = findElement('.hero__fav');
 
 //korzinaga bosilganda
 korzina.addEventListener('click', () => { alert("Korzinaga qo'shildi") })
 //sevimliga bosilganda
 favorite.addEventListener('click', () => { alert("Sevimliga qo'shildi") })
 
-function images() {
-  
+//================================================================================//
+
+
+
+//================================================================================//
+const addBtn = findElement(".hero__btn-add")
+const removeBtn = findElement(".hero__btn-remove")
+const overAll = findElement(".hero__numbs")
+
+let numb = 1;
+
+function add() {
+    let addition = ++numb
+    overAll.textContent = addition;
 }
 
-let toAdd = 1
-let overNumb = 1
+// function remove() {
+//     if (numb <= 0) {
+//         return
+//     } else {
+//         let removal = --numb
 
-function add(evt) {
-    evt.preventDefault();
+//         overAll.textContent = removal;
+//         console.log(overAll);
+//     }
 
+// }
+
+function remove() {
+    if (numb <= 0)
+        return
+
+    let removal = --numb;
+    overAll.textContent = removal;
 }
 
-addBtn.addEventListener('click', add)
+addBtn.addEventListener("click", add)
+removeBtn.addEventListener("click", remove);
 
-first.addEventListener('click', images)
+//========================================================================================//

@@ -10,6 +10,9 @@
     &__hidden {
         display: none;
     }
+    &__img {
+        margin-bottom: 9px;
+    }
 
     &__images {
         position: absolute;
@@ -33,12 +36,9 @@
         letter-spacing: 0.04em;
         color: #828282;
     }
-    &__prices {
-        display: flex;
-        align-items: center;
-        margin-top: 46px;
-    }
+
     &__price {
+        margin-top: 46px;
         font-weight: bold;
         font-size: 24px;
         line-height: 24px;
@@ -87,31 +87,52 @@
     }
 
     &__btns {
-        display: block;
-        display: flex;
-        align-items: center;
         margin-top: 40px;
+        display: flex;
+        text-align: center;
         margin-bottom: 12px;
-        margin-right: 5px;
+    }
+
+    &__plus-minus {
+        display: flex;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__numbs {
         border: none;
-        text-decoration: none;
+        width: 40px;
+        height: 44px;
+        padding: 12px;
+        padding-top: 12px;
+        background-color: rgb(245, 236, 236);
     }
 
     &__btn-remove {
-        background-color: #f2f2f2;
         border: none;
+        width: 40px;
+        height: 44px;
         padding: 12px;
+        background-color: rgb(245, 236, 236);
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
     }
-    &__numbs {
-        background-color: #f2f2f2;
-        border: none;
-        padding: 10px;
-    }
+
     &__btn-add {
-        background-color: #f2f2f2;
         border: none;
+        width: 40px;
+        height: 44px;
         padding: 12px;
+        background-color: rgb(245, 236, 236);
         margin-right: 12px;
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
     }
 
     &__korzina {
@@ -177,7 +198,7 @@
     }
 }
 
-@include breakpoint-down(768px) {
+@include breakpoint-down(375px) {
     .hero {
         &__container {
             display: flex;
@@ -187,13 +208,16 @@
         &__hidden {
             display: block;
         }
+        &__img {
+            margin-bottom: 5px;
+        }
 
         &__images {
-         margin-top: -24px;;
+            margin-top: -24px;
         }
 
         &__content {
-         text-align: left;
+            text-align: left;
         }
 
         &__select {
@@ -201,13 +225,11 @@
         }
 
         &__korzina {
-            padding: 12px;
+            padding: 14px;
         }
 
         &__fav {
-            padding: 12px;
-            display: flex;
-            justify-content: center;
+            padding: 14px;
         }
 
         &__line {
@@ -223,8 +245,7 @@
 
         &__btns {
             display: flex;
-            flex-wrap: wrap;
-            width: 350px;
+            flex-direction: column-reverse;
         }
 
         &__image {

@@ -36,7 +36,7 @@
             </button>
 
 
-            <div class="navbar">
+            <nav class="navbar">
                 <button class="navbar__btn">
                     <img src="img/menu-close.png" alt="menu-close" width="24" height="24">
                 </button>
@@ -54,7 +54,7 @@
                         <a class="navbar__link" href="#">Выход</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -69,8 +69,7 @@
                     <img class="hero__img third-img" src="img/girl-in-pink.png" alt="boy" width="70" height="91">
                     <img class="hero__img fourth-img" src="img/girl-behind.png" alt="boy" width="70" height="91">
                     <img class="hero__img fifth-img" src="img/pink-pajama.png" alt="boy" width="70" height="91">
-                    <img class="hero__img sixth-img" src="img/pink-pajama-behind.png" alt="boy" width="70"
-                        height="91">
+                    <img class="hero__img sixth-img" src="img/pink-pajama-behind.png" alt="boy" width="70" height="91">
                 </div>
 
                 <div class="hero__content">
@@ -88,17 +87,15 @@
                             <a class="stars__otziv" href="#"> 14 отзывов</a></span>
                     </div>
 
-                    <div class="hero__prices">
-                        <p class="hero__price">800 ₽</p>
+                    <p class="hero__price">800 ₽
                         <span class="hero__notprice">1 500 ₽</span>
-                    </div>
+                    </p>
 
                     <input class="hero__input" type="text" readonly placeholder="скидка -36%">
                     <input class="hero__input" type="text" readonly placeholder="скидка -20%">
 
                     <select class="hero__select" id="hero__select">
                         <option value="all" selected disabled>Выбрать размер</option>
-                        <option value="6month">6 month</option>
                         <option value="1-2">1-2 years</option>
                         <option value="3-4">3-4 years</option>
                         <option value="5-6">5-6 years</option>
@@ -107,44 +104,50 @@
                         <option value="11-12">11-12 years</option>
                     </select>
 
-                    <label class="hero__size" for="hero__select">Определить размер</a>
+                    <label class="hero__size" for="hero__select">Определить размер</label>
 
-                        <div class="hero__btns">
-                            <button type="button" class="hero__btn-remove"> – </button>
-                            <p class="hero__numbs">1</p>
-                            <button type="button" class="hero__btn-add"> + </button>
-                            <button type="button" class="hero__korzina">Добавить в корзину</button>
-                            <button type="button" class="hero__fav">
+                    <div class="hero__btns">
+                        <div class="hero__plus-minus">
+                            <button class="hero__btn-remove"> – </button>
+                            <p class="hero__numbs">0</p>
+                            <button class="hero__btn-add"> + </button>
+                        </div>
+                        <div class="hero__box">
+                            <button class="hero__korzina">Добавить в корзину</button>
+                            <button class="hero__fav">
                                 <img src="img/Group 13.png" alt="izbranniy" width="16" height="16">
                             </button>
                         </div>
+                    </div>
 
 
-                        <a class="hero__buy" href="#">Купить в 1 клик</a>
+                    <a class="hero__buy" href="#">Купить в 1 клик</a>
 
-                        <hr class="hero__line">
+                    <hr class="hero__line">
 
-                        <div class="hero__customer">
-                            <div class="hero__folder">
-                                <img src="img/Group.png" alt="clothes" width="15" height="15">
-                                <a class="hero__custome" href="#">Описание товара </a>
-                            </div>
-                            <div class="hero__folder">
-                                <img src="img/Group1.png" alt="clock" width="15" height="15">
-                                <a class="hero__custome" href="#">Доставка и возврат</a>
-                            </div>
-                            <div class="hero__folder">
-                                <img src="img/Group2.png" alt="card" width="14" height="10">
-                                <a class="hero__custome" href="#">Способы оплаты</a>
-                            </div>
+                    <div class="hero__customer">
+                        <div class="hero__folder">
+                            <img src="img/Group.png" alt="clothes" width="15" height="15">
+                            <a class="hero__custome" href="#">Описание товара </a>
                         </div>
+                        <div class="hero__folder">
+                            <img src="img/Group1.png" alt="clock" width="15" height="15">
+                            <a class="hero__custome" href="#">Доставка и возврат</a>
+                        </div>
+                        <div class="hero__folder">
+                            <img src="img/Group2.png" alt="card" width="14" height="10">
+                            <a class="hero__custome" href="#">Способы оплаты</a>
+                        </div>
+                    </div>
                 </div>
-                </di20 </div>
+            </div>
         </section>
 
         <section class="styles">
             <div class="container styles__container">
-                <h3 class="styles__title">Посмотреть все стили</h3>
+                <button class="styles__btn">
+                    <h3 class="styles__title">Посмотреть все стили</h3>
+                </button>
 
                 <div class="styles__images">
                     <img class="styles__image" src="img/12296786-1 1.png" alt="girl" width="686" height="688">

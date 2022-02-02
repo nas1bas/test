@@ -30,9 +30,11 @@
     }
 
     &__input {
+        margin-top: 45px;
+        border: none;
         padding: 5px 220px 5px 0;
-        border: 1px solid #c4c4c4;
         text-align: right;
+        border-bottom:1px solid #C4C4C4 ;
     }
     
     &__btn {
