@@ -77,7 +77,7 @@
     }
 }
 
-@include breakpoint-down(400px) {
+@include breakpoint-down(768px) {
     .styles {
         &__images {
             display: none;
